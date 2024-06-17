@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  mi-app:
+    container_name: mi-app
+    image: ljarpag/todo-api:latest   
+    ports:
+      - 5000:5000
+    networks:
+      - apps   
+
+networks:
+  apps:
+    external: true
+    
+
+ 
