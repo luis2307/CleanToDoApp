@@ -50,3 +50,23 @@ Por ejemplo, si está ejecutando Docker en su máquina local y ha establecido la
   }
 }
 ```
+
+## Paso 4: Configuración de Redis en Docker
+Para configurar un contenedor de Docker que ejecute Redis, utilizamos el siguiente comando:
+```sh
+docker run -d --name redis-stack -e REDIS_ARGS="--requirepass <YourHardPasswordHere>" -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+```
+
+- -d: Ejecuta el contenedor en segundo plano.
+- --name redis-stack: Asigna el nombre redis-stack al contenedor.
+- -e REDIS_ARGS="--requirepass <YourHardPasswordHere>": Establece una contraseña para Redis.
+- -p 6379:6379: Mapea el puerto 6379 del contenedor al puerto 6379 de la máquina host.
+- -p 8001:8001: Mapea el puerto 8001 del contenedor al puerto 8001 de la máquina host.
+- redis/redis-stack:latest: Especifica la imagen más reciente de Redis.
+
+Una vez que el contenedor de Redis esté en funcionamiento, puede acceder a Redis Browser en la siguiente URL:
+>Open Redis Browser http://localhost:8001/
+
+>Username: default
+
+>Password: You have set it up
