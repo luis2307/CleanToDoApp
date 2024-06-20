@@ -18,7 +18,8 @@ public class ToDoItemController : ControllerBase
     [Authorize]
     public async Task<IActionResult> Get()
     {
-        return Ok(await _sender.Send(new ToDoItemQuery()));
+        var result = await _sender.Send(new ToDoItemQuery());  
+        return Ok(result);
     }
 
     [HttpPost]

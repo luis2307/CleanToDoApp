@@ -21,14 +21,14 @@ public static class ServiceExtensions
     public static void AddPersistenceDependencies(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<ToDoDbContext>(opts =>
-            opts.UseSqlServer(configuration.GetConnectionString("sqlConnection"), b => b.MigrationsAssembly("ToDoApp.Persistence")));
+            opts.UseSqlServer(configuration.GetConnectionString("sqlConnection")/*Environment.GetEnvironmentVariable("sqlConnection")*/, b => b.MigrationsAssembly("ToDoApp.Persistence")));
 
         services.AddScoped<IToDoRepository, SqlToDoRepository>();
     }
 
     public static void AddInfrastructureDependencies(this IServiceCollection services, IConfiguration configuration)
     {
-         
+
         services.AddScoped<IAuthenticationService, AuthenticationService>();
 
         services.AddIdentity<User, IdentityRole>(o =>
@@ -67,5 +67,5 @@ public static class ServiceExtensions
         });
     }
 
-     
+
 }

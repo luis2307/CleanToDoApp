@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		files\ToDoApp.postman_collection.json = files\ToDoApp.postman_collection.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApp.Fns", "ToDoApp.Fns\ToDoApp.Fns.csproj", "{5B8CAF45-573D-47A6-BA52-3E6BDF9E8EEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{DA33F6F0-BF91-4DEF-80BE-8B2E2DDC4CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA33F6F0-BF91-4DEF-80BE-8B2E2DDC4CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA33F6F0-BF91-4DEF-80BE-8B2E2DDC4CC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8CAF45-573D-47A6-BA52-3E6BDF9E8EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8CAF45-573D-47A6-BA52-3E6BDF9E8EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8CAF45-573D-47A6-BA52-3E6BDF9E8EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8CAF45-573D-47A6-BA52-3E6BDF9E8EEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{8205DAAB-E1E2-4098-B9F7-03B9900BDC41} = {753910C3-3BA3-4933-AF53-62631C7E521F}
 		{9CC7CB49-58D3-42EB-A1B9-A021CF621910} = {753910C3-3BA3-4933-AF53-62631C7E521F}
 		{DA33F6F0-BF91-4DEF-80BE-8B2E2DDC4CC9} = {8BFD18FA-5AC2-4A02-AA0E-77F65C079165}
+		{5B8CAF45-573D-47A6-BA52-3E6BDF9E8EEF} = {AEE51D5C-AAC9-41D5-98FE-1C9EC4FEB36B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B81A701-CA9A-4EEB-8583-C471B446F564}

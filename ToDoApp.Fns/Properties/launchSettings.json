@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ToDoApp.Fns": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7060",
+      "launchBrowser": false
+    }
+  }
+}
