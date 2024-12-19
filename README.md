@@ -70,3 +70,5 @@ Una vez que el contenedor de Redis esté en funcionamiento, puede acceder a Redi
 >Username: default
 
 >Password: You have set it up
+
+# Pronto se viene más cositas interesantes.
